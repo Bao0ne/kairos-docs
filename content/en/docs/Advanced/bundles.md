@@ -113,7 +113,7 @@ Kairos supports three types of bundles:
 
 - **Run**: This type is also a bare container, but it comes with a script that can be run during the installation phase to add custom logic. This is useful for performing any necessary setup or configuration tasks that need to be done before the cluster is fully deployed (prefixed with `run:`).
 
-- **Package**: This type is a [luet](https://luet.io) package that will be installed in the system. It requires you to specify a `luet` repository in order to work. Luet packages are a powerful way to manage dependencies and install software on your system (prefixed with `luet:`).
+- **Package**: This type is a [luet](https://luet.io) package that will be installed in the system. It requires you to specify a `luet` repository in order to work. Luet packages are a powerful way to manage dependencies and install software on your system (prefixed with `package:`).
 
 You can also specify `local_file: true` in the bundles configuration. In that case the bundle's URL is translated as an absolute path to an image tarball on the filesystem.
 This feature can be used in airgap situations, where you can pre-add bundles to the image before deployment.
